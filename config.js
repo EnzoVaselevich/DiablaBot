@@ -5,63 +5,65 @@ import fs from 'fs';
 import cheerio from 'cheerio';
 import fetch from 'node-fetch';
 import axios from 'axios';
-import moment from 'moment-timezone';
+import moment from 'moment-timezone'
 
 global.botnumber = ""
 global.confirmCode = ""
 
+//no quites los numeros que contengan "true"
 global.owner = [
-  ['5219992095479', '👑 Mystic - Creador 👑', true],
-  ['50499698072', '💫 Mystic - Collaborator 1 💫', true],
-  ['51940617554', '💫 Mystic - Collaborator 2 💫', true],
-  ['51996089079', '💫 Mystic - Collaborator 3 💫', true],
-  ['5218442286089', '💫 Mystic - Collaborator 4 💫', true],
-  ['50246028932', '💫 Mystic - Collaborator 5 💫', true],
-  ['5212412377467', '💫 Mystic - Collaborator 6 💫', true],
-  ['5215517489568', '💫 Mystic - Rey Endymion 💫', false],
-  ['59895555511', '💫 Mystic - Collaborator 8 💫', true],
-  ['59177601773', '💫 Mystic - By Alba070503 💫', true],
-  ['393518398856','💫 Mystic - Tester Fabri115💫', true],
-  ['593968585283'],
-  ['5492266466080'],
-  ['5218442114446'],
-  ['59894808483'],
-  ['593980586516'], 
-  ['595975740803'],  
-  ['5492266613038'],
-  ['50497150165'],
-  ['51906662557'],
-  ['573183650526'], 
-  ['5217441298510'], 
-  ['5217294888993'],
-  ['595992611272']
-];
+ ['5491168758497', '👑 𝘾𝙧𝙚𝙖𝙙𝙤𝙧 👑', true],
+ ['593939005387', '🛡️ 𝗝𝗼𝘀𝘁𝗶𝗻 𝗢𝘄𝗻𝗲𝗿 𝗢𝗙𝗖 🛡️', true],
+ ['17202635863', '𝗢𝘄𝗻𝗲𝗿2', true],
+ ['50585124470', 'Ender Owner3', true]]
 
-global.suittag = ['5219993404349'];
-global.prems = ['51995386439'];
 
-global.packname = 'Sticker';
-global.author = 'The Mystic - Bot';
-global.wm = 'The Mystic - Bot';
-global.titulowm = 'The Mystic - Bot';
-global.titulowm2 = `The Mystic - Bot`
-global.igfg = 'The Mystic - Bot';
-global.wait = '*[ ⏳ ] Cargando...*';
+global.suittag = ['5491168758497'];
+global.prems = ['5491168758497'];
+
+
+global.packname = '🌷 𝙳𝙸𝙰𝙱𝙻𝙰𝙱𝙾𝚃-𝙼𝙳 🌹';
+global.author = '𝐃𝐢𝐚𝐛𝐥𝐚𝐁𝐨𝐭';
+global.wm = '🍁 𝕯𝖎𝖆𝖇𝖑𝖆𝕭𝖔𝖙-𝕸𝕯 🌸';
+global.sk = '🌹 𝐃𝐢𝐚𝐛𝐥𝐚𝐌𝐃 💮';
+global.titulowm = '🍁 𝖣𝗂𝖺𝖻𝗅𝖺 : 𝖡𝗈𝗍🪷';
+global.titulowm2 = `𝖣𝗂𝖺𝖻𝗅𝖺 : 𝖡𝗈𝗍 - 𝖬𝖣 ☘️`
+global.igfg = '𝘋𝘪𝘢𝘣𝘭𝘪𝘵𝘢𝘉𝘰𝘵-𝘔𝘋';
+global.wait = '*⏳ 𝙲𝙰𝚁𝙶𝙰𝙽𝙳𝙾....*';
+global.vs = '1.5.5';
+
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
-global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
+global.imagen3 = fs.readFileSync('./src/NaufraMD.png');
 global.imagen4 = fs.readFileSync('./Menu.png');
 global.imagen5 = fs.readFileSync('./src/+18.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
-global.imagen7 = fs.readFileSync('./src/menu_pt.png');
-global.imagen8 = fs.readFileSync('./src/menu_fr.png')
-global.imagen9 = fs.readFileSync('./src/menu_en.png')
-global.imagen10 = fs.readFileSync('./src/menu_ru.png')
+global.imagen7 = fs.readFileSync('./Menu6.jpg')
+global.imagen8 = fs.readFileSync('./Menu4.jpg')
+
+
+global.gp1 = 'https://chat.whatsapp.com/DCjR7iTdg5q3Si4TbuwRjR'
+global.gp2 = 'https://www.paypal.me/ColaboracionBotOFC'
+global.gp3 = 'https://www.instagram.com/naufrazapp?igsh=Y2g1ZXJxbm53eXAy'
+global.gp4 = 'https://www.tiktok.com/@naufra.zapp?_t=8kcJigwvtji&_r=1'
+global.gp5 = 'https://chat.whatsapp.com/CH6Kc8UEpASLJCVasfZOuC' //colaboración
+global.channel = 'https://whatsapp.com/channel/0029VaFbERfFnSz5zeyfpi3L'
+global.paypal = ''
+global.yt = 'https://youtube.com/@Enzito-19'
+global.md = 'https://github.com/EnzoVaselevich/DiablaBot-MD-OFC-'
+global.fb = 'https://www.facebook.com/share/8XyV52kz3sfhrzft/?mibextid=qi2Omg'
+
+//MENSAJES RANDOM:
+global.naufraMenus = [imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8]
+global.naufraRedes = [gp1, gp2, gp3, gp4, channel, paypal, yt, md, fb]
+
+
+var ase = new Date(); var hour = ase.getHours(); switch(hour){ case 0: hour = 'Linda Mañana'; break; case 1: hour = 'Linda Mañana'; break; case 2: hour = 'Linda Mañana'; break; case 3: hour = 'Linda Mañana'; break; case 4: hour = 'linda mañana'; break; case 5: hour = 'Linda Mañana'; break; case 6: hour = 'Linda Mañana'; break; case 7: hour = 'Linda Mañana'; break; case 8: hour = 'Linda Mañana'; break; case 9: hour = 'Linda Mañana'; break; case 10: hour = 'Lindo Dia'; break; case 11: hour = 'Lindo Dia'; break; case 12: hour = 'Lindo Dia'; break; case 13: hour = 'Lindo Dia'; break; case 14: hour = 'Linda Tarde'; break; case 15: hour = 'Linda Tarde'; break; case 16: hour = 'Linda Tarde'; break; case 17: hour = 'Linda Tarde'; break; case 18: hour = 'Linda Noche'; break; case 19: hour = 'Linda Noche'; break; case 20: hour = 'Linda Noche'; break; case 21: hour = 'Linda Noche'; break; case 22: hour = 'Linda Noche'; break; case 23: hour = 'Linda Noche'; break;}
+global.saludo = '🌹' + hour;
 
 global.mods = [];
 
-//* *******Tiempo***************
 global.d = new Date(new Date + 3600000);
 global.locale = 'es';
 global.dia = d.toLocaleDateString(locale, {weekday: 'long'});
@@ -69,16 +71,16 @@ global.fecha = d.toLocaleDateString('es', {day: 'numeric', month: 'numeric', yea
 global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
-//* ****************************
-global.wm2 = `${dia} ${fecha}\nThe Mystic - Bot`;
-global.gt = 'The Mystic - Bot';
-global.mysticbot = 'The Mystic - Bot';
-global.md = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
-global.mysticbot = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
-global.waitt = '*[ ⏳ ] Cargando...*';
-global.waittt = '*[ ⏳ ] Cargando...*';
-global.waitttt = '*[ ⏳ ] Cargando...*';
-global.nomorown = '5219993404349';
+
+
+global.wm2 = `${dia} ${fecha}\nNaufraBot`;
+global.gt = 'DiablaBot';
+global.mysticbot = '𝗗𝗜𝗔𝗕𝗟𝗔𝗕𝗢𝗧-𝗠𝗗🌸';
+global.mysticbot = 'https://whatsapp.com/channel/0029VaFbERfFnSz5zeyfpi3L';
+global.waitt = '*⏳ 𝙲𝙰𝚁𝙶𝙰𝙽𝙳𝙾....*';
+global.waittt = '*⏳ 𝙲𝙰𝚁𝙶𝙰𝙽𝙳𝙾....*';
+global.waitttt = '*⏳ 𝙲𝙰𝚁𝙶𝙰𝙽𝙳𝙾....*';
+global.nomorown = '5491168758497';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
@@ -93,8 +95,8 @@ global.htki = '*⭑•̩̩͙⊱•••• ☪*';
 global.htka = '*☪ ••••̩̩͙⊰•⭑*';
 global.comienzo = '• • ◕◕════';
 global.fin = '════◕◕ • •';
-global.botdate = `*[ 📅 ] Fecha:*  ${moment.tz('America/Mexico_City').format('DD/MM/YY')}`;
-global.bottime = `*[ ⏳ ] Hora:* ${moment.tz('America/Mexico_City').format('HH:mm:ss')}`;
+global.botdate = `*📆 Fecha:*  ${moment.tz('America/Mexico_City').format('DD/MM/YY')}`;
+global.bottime = `*⏰ Hora:* ${moment.tz('America/Mexico_City').format('HH:mm:ss')}`;
 global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage': {'title': wm, 'h': `Hmm`, 'seconds': '999999999', 'gifPlayback': 'true', 'caption': bottime, 'jpegThumbnail': fs.readFileSync('./Menu.png')}}};
 global.multiplier = 99;
 global.flaaa = [
@@ -104,7 +106,7 @@ global.flaaa = [
   'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
   'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text=',
 ];
-//* ************************
+
 
 const file = fileURLToPath(import.meta.url);
 watchFile(file, () => {
